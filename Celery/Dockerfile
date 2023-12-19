@@ -15,7 +15,7 @@ COPY . .
 RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
 
 # Expose port 8000 for the Django application
-#EXPOSE 8000
+EXPOSE 8000
 
 # Set execute permissions for entrypoint.sh
 RUN chmod +x entrypoint.sh
